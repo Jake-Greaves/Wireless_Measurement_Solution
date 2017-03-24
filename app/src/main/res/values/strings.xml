@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Wireless Measurement Solution</string>
+    <string name="send_button">Scan for Devices</string>
+    <string name="graph">View Graph</string>
+</resources>

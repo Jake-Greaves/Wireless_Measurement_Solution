@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical"
+        tools:context="com.analog.learningandroid.ControlActivity">
+
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="wrap_content"
+            android:layout_height="200dip"
+            android:id="@+id/graph"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/freeze_graph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textSize="20sp"
+            android:text="Freeze Graph  " />
+
+        <TextView
+            android:id="@+id/textDeviceName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textDeviceAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+            <TextView
+                android:id="@+id/debug_window"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"/>
+        </ScrollView>
+    </LinearLayout>
+
+
